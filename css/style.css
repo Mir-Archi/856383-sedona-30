@@ -536,7 +536,7 @@ input::-webkit-inner-spin-button {
   bottom: 32px;
   background-color: var(--white);
   margin: 0 auto;
-  height: 121px;
+  padding: 36px 0 36px 0;
   width: 1200px;
   display: flex;
   justify-content: space-between;
