@@ -42,7 +42,6 @@
   text-transform: uppercase;
   background-color: var(--white-f2f);
   background-position: top center;
-  min-height: 100%;
   display: grid;
   grid-template-rows: min-content 1fr min-content;
 }
@@ -88,7 +87,7 @@
   list-style: none;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+
   /*display: grid;
   grid-template-columns: repeat(4, max-content);
   justify-content: space-between;*/
@@ -97,13 +96,15 @@
 }
 
 .navigation-item:nth-child(2) {
-  margin-right: 134px;
+margin-left: 134px;
 }
 
 .navigation-item:nth-child(3) {
+  margin-left: 418px;
+}
+.navigation-item:last-child{
   margin-left: 147px;
 }
-
 .navigation-link {
   text-decoration: none;
   color: var(--black);
@@ -128,13 +129,14 @@
   background-image: url(../img/decor-welcome-block.svg), url(../img/welcome-block-image.jpg);
   background-repeat: no-repeat;
   background-size: contain, cover;
+  background-position: center;
   background-position: 0% 100%;
   min-height: 509px;
-  padding-top: 77px;
 }
 
 .welcome-block img {
   display: block;
+  padding-top: 77px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -152,7 +154,7 @@
 .discription-block p {
   line-height: 26px;
   color: var(--grey);
-  padding-top: 16px;
+  padding-top: 44px;
   margin: 0px;
 }
 
@@ -188,13 +190,11 @@
 
 .discription-real-town h3 {
   font-size: 21px;
-  padding: 47px 139px 25px 139px;
-  margin: 0px;
+  margin: 47px 139px 25px 139px;
 }
 
 .discription-real-town p {
-  margin: 0px;
-  padding: 23px 54px;
+  margin: 23px 0 54px 0;
 }
 
 .discription-real-town span {
@@ -326,32 +326,36 @@
 }
 
 .interest {
-  width: 1200px;
-  height: 291px;
+
   text-align: center;
+  padding-left: 316px;
+  padding-right: 316px;
 }
 
 .interest h2 {
   font-size: 30px;
-  line-height: 24px;
   font-weight: 700;
   color: var(--black);
-  margin: 0px;
-  padding-top: 58px;
+  margin: 58px 0 0 0;
+
 }
 
 .interest p {
   line-height: 24px;
   color: var(--grey);
-  margin: 0px;
-  padding-top: 25px;
-  padding-bottom: 110px;
+  margin: 40px 0 33px 0;
+
 }
 
 /*-------------BLOCK-form-search-hotel---------------*/
 
 .search-hotels {
   position: relative;
+}
+
+.search-hotels img {
+  position: relative;
+  top: 93px;
 }
 
 .wrapper-form {
@@ -379,7 +383,7 @@
   justify-content: space-between;
   align-items: baseline;
   width: 458px;
-  padding-bottom: 29px;
+  padding-bottom: 27px;
 }
 
 .form-button-data {
@@ -407,16 +411,25 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding-bottom: 54px;
+  padding-bottom: 53px;
 }
-
+.qw{
+  margin-right: 27px;
+}
 .wrapper-form-age input {
-  align-self: stretch;
+  text-align: center;
   width: 38px;
+  height: 38px;
+  padding: 0;
 }
-
-.wrapper-form-age label {
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+.label-adults{
   padding-right: 40px;
+}
+.label-chuldern{
+  padding-right: 27px;
 }
 
 .wrapper-form-age {
@@ -426,8 +439,9 @@
 
 .form-search-hotel {
   position: absolute;
+  z-index: 1;
   left: 316px;
-  top: -86px;
+  top: 7px;
   font-size: 14px;
   line-height: 26px;
   font-weight: 700;
@@ -499,11 +513,11 @@
 }
 
 .button-minus, .button-plus {
-  font-size: 11px;
-  line-height: 11px;
+  width: 38px;
+  height: 38px;
   background-color: var(--white-01);
   color: var(--brown-02);
-  padding: 10px 10px;
+  padding: 6px 10px;
 }
 
 .button-minus:hover, .button-plus:hover {
@@ -518,12 +532,15 @@
 /*------------------FOOTER BLOCK----------------------*/
 
 .footer {
+  position: relative;
+  bottom: 32px;
   background-color: var(--white);
   margin: 0 auto;
+  height: 121px;
   width: 1200px;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-between;
+  align-items: center;
   /*display: grid;
   grid-template-columns: 1fr 1fr 1fr;*/
   text-align: center;
@@ -533,25 +550,27 @@
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
+  margin-left: 126px;
 }
 
 .footer-contacts p {
-  margin: 0px;
-  padding: 23px 0 4px 0;
+  margin: 0;
+
 }
 
 .footer-contacts a {
   display: block;
   text-decoration: none;
   color: var(--black);
-  padding: 4px 0 4px 0;
+  padding: 9px 2px 2px 2px;
 }
 
 .social-list {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
   list-style: none;
-  padding: 36px 0 36px 0;
+  padding: 0;
   margin: 0;
   width: 170px;
 }
@@ -563,7 +582,7 @@
   width: 46px;
   height: 48px;
   background-color: var(--blue);
-  margin: 3px 3px 3px 3px;
+  margin: 0 3px 0 3px;
 }
 
 .link-twitter::before {
@@ -611,15 +630,18 @@
   font-size: 14px;
   line-height: 26px;
   font-weight: 400;
+  margin-right: 138px;
+  margin-top: 16px;
 }
 
 .footer-copyright p {
-  margin: 0px;
-  padding: 49px 6px 46px 0;
+margin: 0;
+padding-top: 10px;
 }
 
 .footer-copyright a {
-  margin: 38px 0 41px 0;
+  margin-left: 8px;
+
   width: 115px;
   height: 41px;
 }
@@ -636,9 +658,11 @@
 
 .filter-hotel {
   width: 1200px;
+  height: 217px;
 }
 
 .form-filter-hotel {
+  height: 217px;
   display: grid;
   grid-template-columns: min-content min-content min-content;
   background-image: url(../img/background-filter.jpg);
@@ -662,6 +686,7 @@
   line-height: 18px;
   font-weight: 400;
   border-bottom: 1px solid var(--white-05);
+  padding: 29px 73px 30px 73px;
   display: flex;
   flex-wrap: wrap;
   align-items: baseline;
@@ -672,17 +697,17 @@
 .sorting-found {
   font-size: 21px;
   line-height: 26px;
-  margin: 29px 46px 31px 73px;
+  margin: 0 46px 0 0;
 }
 
 .sorting p {
-  margin: 0 40px 0 0;
+  margin: 0 43px 0 0;
 }
 
 .sorting-list {
   list-style: none;
   padding: 0;
-  /* width: 239px; */
+  margin: 0;
   display: flex;
   flex-wrap: wrap;
   /* display: grid; */
@@ -718,7 +743,6 @@
 
 .sorting-link-button {
   margin-left: auto;
-  margin-right: 73px;
 }
 
 .sorting-button {
@@ -761,7 +785,7 @@
 }
 
 .paragraph {
-  margin: 0;
+  margin: 0 0 0 0;
   grid-area: paragraph;
 }
 
@@ -790,23 +814,28 @@
   background-position: 100% 0%;
   height: 17px;
   margin: 0px;
+  padding: 0;
   align-self: flex-end;
 }
 
 .star-1 {
   width: 20px;
 }
+
 .star-2 {
   width: 40px;
 }
+
 .star-3 {
   width: 60px;
 }
+
 .star-4 {
-  width: 80px;
+  width: 77px;
 }
+
 .star-5 {
-  width: 100px;
+  width: 104px;
 }
 
 .rating p {
