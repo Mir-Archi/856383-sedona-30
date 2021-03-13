@@ -534,8 +534,8 @@ input::-webkit-inner-spin-button {
 
 .footer {
   position: relative;
-  z-index: 3;
-  /* top: 2642px; */
+ z-index: 3;
+   /* top: 2642px; */
   background-color: var(--white);
   margin: 0 auto;
   padding: 23px 0 36px 0;
@@ -552,8 +552,6 @@ input::-webkit-inner-spin-button {
   line-height: 26px;
   font-weight: 700;
   /* width: 328px; */
-  justify-self: center;
-  align-self:center
 }
 
 .footer-contacts p {
@@ -569,7 +567,7 @@ input::-webkit-inner-spin-button {
 
 .social-list {
   justify-self: center;
-  align-self:flex-end;
+  align-self:center;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 6px;
@@ -691,7 +689,6 @@ padding-top: 10px;
 
 .sorting {
   list-style: none;
-  height: 100%;
   font-size: 12px;
   line-height: 18px;
   font-weight: 400;
@@ -699,7 +696,6 @@ padding-top: 10px;
   padding: 29px 73px 30px 73px;
   display: flex;
   flex-wrap: wrap;
-  align-items: baseline;
   /*display: grid;
   grid-template-columns: max-content max-content 1fr max-content;*/
 }
@@ -711,19 +707,15 @@ padding-top: 10px;
 }
 
 .sorting p {
-  margin: 0 43px 0 0;
+  margin: 3px 43px 0 0;
 }
 
 .sorting-list {
   list-style: none;
   padding: 0;
-  margin: 0;
+  margin: 3px 0 0 0;
   display: flex;
   flex-wrap: wrap;
-  /* display: grid; */
-  /* grid-template-columns: max-content max-content max-content; */
-  /* gap: 30px; */
-  /* align-items: center; */
 }
 
 .sorting-link {
@@ -753,10 +745,12 @@ padding-top: 10px;
 
 .sorting-link-button {
   margin-left: auto;
+  margin-top: 8px;
 }
 
-.sorting-button {
-  padding: 3px;
+
+.sorting-button svg {
+  padding-left: 8px;
 }
 
 .sorting-button:hover path {
@@ -770,7 +764,6 @@ padding-top: 10px;
 .list-hotel {
   list-style: none;
   width: 1200px;
-  min-height: 454px;
   margin: 0;
   padding: 0;
 }
@@ -779,7 +772,7 @@ padding-top: 10px;
   color: var(--black);
   display: grid;
   grid-template-columns: max-content max-content 1fr;
-  padding: 30px 73px 30px 73px;
+  padding: 27px 73px 31px 73px;
   border-bottom: 1px solid var(--white-05);
 }
 
@@ -787,28 +780,33 @@ padding-top: 10px;
   padding-left: 29px;
   display: grid;
   grid-template-areas: "name name" "paragraph price" "detailed booked";
-  gap: 7px;
+  column-gap: 6px;
 }
 
 .name-hotel-link {
   grid-area: name;
+  display: block;
 }
 
 .paragraph {
   margin: 0 0 0 0;
-  grid-area: paragraph;
+ grid-area: paragraph;
+ margin-top: 7px;
+ margin-bottom: 13px;
 }
 
 .price {
-  grid-area: price;
+   grid-area: price;
+   margin-top: 7px;
+ margin-bottom: 13px;
 }
 
 .detailed-link {
-  grid-area: detailed;
+   grid-area: detailed;
 }
 
 .booked-link {
-  grid-area: booked;
+   grid-area: booked;
 }
 
 .rating {
@@ -818,41 +816,11 @@ padding-top: 10px;
   justify-content: space-between;
 }
 
-.star {
-  background-image: url(../img/star.svg);
-  background-repeat: repeat;
-  background-position: 100% 0%;
-  height: 17px;
-  margin: 0px;
-  padding: 0;
-  align-self: flex-end;
-}
-
-.star-1 {
-  width: 20px;
-}
-
-.star-2 {
-  width: 40px;
-}
-
-.star-3 {
-  width: 60px;
-}
-
-.star-4 {
-  width: 77px;
-}
-
-.star-5 {
-  width: 104px;
-}
-
 .rating p {
   text-align: center;
   color: var(--brown-04);
   background-color: var(--white-01);
-  padding: 3px 12px 3px 15px;
+  padding: 4px 12px 4px 15px;
   margin: 0;
   align-self: flex-end;
 }
@@ -890,19 +858,22 @@ padding-top: 10px;
 }
 
 .detailed-link {
+    font-size: 14px;
+line-height: 21px;
   font-weight: 700;
   color: var(--white);
   text-decoration: none;
   background-color: var(--blue);
-  padding: 3px 16px 3px 17px;
+  padding: 3px 17px 3px 17px;
 }
-
 .booked-link {
+  font-size: 14px;
+  line-height: 21px;
   font-weight: 700;
   color: var(--white);
   text-decoration: none;
   background-color: var(--brown);
-  padding: 3px 16px 3px 17px;
+  padding: 3px 16px 3px 18px;
 }
 
 .list-hotel-item p {
@@ -912,11 +883,36 @@ padding-top: 10px;
 .list-hotel-item span {
   color: var(--grey);
 }
-
-.rating b {
-  text-align: center;
-  color: var(--brown-04);
-  background-color: var(--white-01);
-  padding: 3px 0 3px 0;
-  width: 110px;
+.star {
+  background-image: url(../img/star.svg);
+  background-repeat: space;
+  background-position: 0% 0%;
+  height: 19px;
+  width: 19px;
+  margin: 0;
+  padding: 0;
+  align-self: flex-end;
 }
+
+.star-1 {
+  width: 20px;
+}
+
+.star-2 {
+  width: 41px;
+}
+
+.star-3 {
+  width: 64px;
+}
+
+.star-4 {
+  width: 88px;
+}
+
+.star-5 {
+  width: 104px;
+}
+
+
+
