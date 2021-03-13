@@ -359,6 +359,7 @@ text-align: right;
   position: relative;
   z-index: 1;
   bottom: -93px;
+  margin-bottom: -34px;
 }
 
 .wrapper-form {
@@ -571,14 +572,14 @@ input::-webkit-inner-spin-button {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 6px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
   /* display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center; */
-  list-style: none;
   /* padding: 0 39px; */
-  margin: 0;
-  padding: 0;
   /* width: 328px; */
 }
 
