@@ -371,7 +371,7 @@ text-align: right;
 }
 
 .wrapper-form-data label {
-  padding-right: 25px;
+  margin-right: 22px;
 }
 
 .wrapper-form-data input {
@@ -415,9 +415,11 @@ text-align: right;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding-bottom: 53px;
+  margin-bottom: 53px;
 }
-
+.label-data-departure{
+  padding-right: 3px;
+}
 .wrapper-form-age input {
   text-align: center;
   width: 38px;
@@ -535,8 +537,7 @@ input::-webkit-inner-spin-button {
 
 .footer {
   position: relative;
- z-index: 3;
-   /* top: 2642px; */
+  z-index: 3;
   background-color: var(--white);
   margin: 0 auto;
   padding: 23px 0 36px 0;
@@ -556,13 +557,14 @@ input::-webkit-inner-spin-button {
 }
 
 .footer-contacts p {
-  margin: 0;
+  margin: 0 0 0 7px;
 }
 
 .footer-contacts a {
   display: block;
   text-decoration: none;
   color: var(--black);
+  margin-left: 8px;
  padding: 9px 3px 3px 3px;
 }
 
@@ -582,7 +584,9 @@ input::-webkit-inner-spin-button {
   /* padding: 0 39px; */
   /* width: 328px; */
 }
-
+.social-item{
+  margin-top: 10px;
+}
 .social-link {
   display: flex;
   align-items: center;
@@ -645,12 +649,11 @@ input::-webkit-inner-spin-button {
 }
 
 .footer-copyright p {
-margin: 0 0 0 0;
-padding-top: 10px;
+margin: 10px 8px 0 0;
 }
 
 .footer-copyright a {
-  margin: 0 0 0 8px;
+  margin: 5px 0 0 0;
   width: 115px;
   height: 41px;
 }
@@ -773,12 +776,14 @@ padding-top: 10px;
   color: var(--black);
   display: grid;
   grid-template-columns: max-content max-content 1fr;
-  padding: 27px 73px 31px 73px;
+  padding: 25px 73px 29px 73px;
   border-bottom: 1px solid var(--white-05);
 }
-
+.list-hotel-item img{
+  padding-top: 6px;
+}
 .discription-hotel {
-  padding-left: 29px;
+  margin-left: 29px;
   display: grid;
   grid-template-areas: "name name" "paragraph price" "detailed booked";
   column-gap: 6px;
@@ -790,16 +795,17 @@ padding-top: 10px;
 }
 
 .paragraph {
-  margin: 0 0 0 0;
+  margin: 0;
+  padding-top: 7px;
+  padding-bottom: 15px;
+
  grid-area: paragraph;
- margin-top: 7px;
- margin-bottom: 13px;
 }
 
 .price {
+  padding-top: 7px;
+padding-bottom: 15px;
    grid-area: price;
-   margin-top: 7px;
- margin-bottom: 13px;
 }
 
 .detailed-link {
@@ -859,13 +865,13 @@ padding-top: 10px;
 }
 
 .detailed-link {
-    font-size: 14px;
-line-height: 21px;
+  font-size: 14px;
+  line-height: 21px;
   font-weight: 700;
   color: var(--white);
   text-decoration: none;
   background-color: var(--blue);
-  padding: 3px 17px 3px 17px;
+  padding: 3px 16px 3px 17px;
 }
 .booked-link {
   font-size: 14px;
@@ -874,7 +880,7 @@ line-height: 21px;
   color: var(--white);
   text-decoration: none;
   background-color: var(--brown);
-  padding: 3px 16px 3px 18px;
+  padding: 3px 17px 3px 18px;
 }
 
 .list-hotel-item p {
@@ -890,7 +896,7 @@ line-height: 21px;
   background-position: 0% 0%;
   height: 19px;
   width: 19px;
-  margin: 0;
+  margin-top: 5px;
   padding: 0;
   align-self: flex-end;
 }
