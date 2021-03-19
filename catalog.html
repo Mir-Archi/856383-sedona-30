@@ -8,6 +8,7 @@
   <link rel="icon" href="favicon/icon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
 </head>
 
@@ -29,7 +30,7 @@
       <h1 class="visually-hidden">Поиск гостиницы</h1>
       <section class="filter-hotel">
         <h2 class="visually-hidden">Фильтр гостиниц</h2>
-        <form class="form-filter-hotel" class="filter" method="get" action="http://echo.htmlacademy.ru">
+        <form class="form-filter-hotel"  method="get" target="_blank" action="http://echo.htmlacademy.ru">
           <fieldset>
             <legend>Инфраструктура:</legend>
             <p class="filter-hotel-item">
@@ -41,7 +42,7 @@
               <label for="parking">Парковка</label>
             </p>
             <p class="filter-hotel-item">
-              <input class="visually-hidden filter-input-checkbox" type="checkbox" disabled="disabled" name="wi-fi" id="wi-fi">
+              <input class="visually-hidden filter-input-checkbox" type="checkbox" name="wi-fi" id="wi-fi">
               <label for="wi-fi">Wi-Fi</label>
             </p>
           </fieldset>
@@ -52,7 +53,7 @@
               <label for="hotel">Гостиница</label>
             </p>
             <p class="filter-hotel-item">
-              <input class="visually-hidden filter-input-checkbox" type="checkbox" disabled="disabled" name="motel" id="motel" checked>
+              <input class="visually-hidden filter-input-checkbox" type="checkbox" name="motel" id="motel" checked>
               <label for="motel">Мотель</label>
             </p>
             <p class="filter-hotel-item">
@@ -84,7 +85,7 @@
         <strong class="sorting-found">Найдено: 3</strong>
         <p>Сортировка:</p>
         <ul class="sorting-list">
-          <li class="sorting-item"><a href="#" class="active-sorting-link sorting-link">По цене</a></li>
+          <li class="sorting-item"><a href="#" class="sorting-link active-sorting-link">По цене</a></li>
           <li class="sorting-item"><a href="#" class="sorting-link">По типу</a></li>
           <li class="sorting-item"><a href="#" class="sorting-link">По рейтингу</a></li>
         </ul>
