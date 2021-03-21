@@ -522,19 +522,34 @@ input::-webkit-inner-spin-button {
   outline: none;
 }
 
-.button-minus, .button-plus {
+.button-minus {
   width: 36px;
   height: 37px;
   background-color: var(--white-01);
   color: var(--brown-02);
   padding: 6px 10px;
 }
-
-.button-minus:hover, .button-plus:hover {
+.button-plus{
+  width: 36px;
+  height: 37px;
+  background-color: var(--white-01);
+  color: var(--brown-02);
+  padding: 6px 10px;
+}
+.button-minus:hover {
   color: var(--black);
 }
 
-.button-minus:focus, .button-plus:focus {
+.button-plus:hover {
+  color: var(--black);
+}
+
+.button-minus:focus {
+  color: var(--blue);
+  outline: none;
+}
+
+.button-plus:focus {
   color: var(--blue);
   outline: none;
 }
