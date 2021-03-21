@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">  <link href="css/normalize.css" rel="stylesheet">
   <link href="css/normalize.css" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet">
 </head>
 
 <body class="page-body">
@@ -71,8 +71,8 @@
               <div class="scale">
                 <div class="bar"></div>
               </div>
-              <div class="range-toggle range-toggle-min"></div>
-              <div class="range-toggle range-toggle-max"></div>
+              <div class="range-toggle range-toggle-min" tabindex="0"></div>
+              <div class="range-toggle range-toggle-max" tabindex="0"></div>
             </div>
             <button class="btn-transparent" type="submit">Показать</button>
           </div>
@@ -90,11 +90,11 @@
           <li class="sorting-item"><a href="#" class="sorting-link">По рейтингу</a></li>
         </ul>
         <div class="sorting-link-button">
-          <a class="sorting-button" href="#"><svg width="11" height="10" viewBox="0 0 11 10" fill="none"
+          <a class="sorting-button" href="#"><span class="visually-hidden">иконка вверх</span><svg width="11" height="10" viewBox="0 0 11 10" fill="none"
               xmlns="http://www.w3.org/2000/svg">
               <path d="M5.5 0L0 10H11L5.5 0Z" fill="#CACACA" />
             </svg></a>
-          <a class="sorting-button active-link-sorting" href="#"><svg width="11" height="10" viewBox="0 0 11 10" fill="none"
+          <a class="sorting-button active-link-sorting" href="#"><span class="visually-hidden">иконка вниз</span><svg width="11" height="10" viewBox="0 0 11 10" fill="none"
               xmlns="http://www.w3.org/2000/svg">
               <path d="M5.5 10L0 0H11" fill="#CACACA" />
             </svg></a>
@@ -156,12 +156,12 @@
     <footer class="footer">
       <div class="footer-contacts">
         <p>#visitSEDONA</p>
-        <a href="tel:+7(495)6660166">ТЕЛ: +7(495) 666-01-66</a>
+        <a href="tel:+74956660166">ТЕЛ: +7(495) 666-01-66</a>
       </div>
       <ul class="social-list">
-        <li class="social-item"><a class="social-link link-twitter" href="#"></a></li>
-        <li class="social-item"><a class="social-link link-fb" href="#"></a></li>
-        <li class="social-item"><a class="social-link link-youtube" href="#"></a></li>
+        <li class="social-item"><a class="social-link link-twitter" href="#"><span class="visually-hidden">twitter</span></a></li>
+        <li class="social-item"><a class="social-link link-fb" href="#"><span class="visually-hidden">facebook</span></a></li>
+        <li class="social-item"><a class="social-link link-youtube" href="#"><span class="visually-hidden">youtube</span></a></li>
       </ul>
       <div class="footer-copyright">
         <p>Website by</p>

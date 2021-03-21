@@ -9,8 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
   <link href="css/normalize.css" rel="stylesheet">
-  <link href="css/normalize.css" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet">
 </head>
 
 <body class="page-body">
@@ -32,7 +31,7 @@
         <h1 class="visually-hidden">Добро пожаловать в великолепную Седону</h1>
         <img src="img/welcome.svg" width="458" height="352" alt="Фоновая картинка с горами">
       </section>
-      <section class="discription-block">
+      <section class="description-block">
         <strong>Седона — небольшой городок в Аризоне,<br>заслуживающий большего!</strong>
         <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
       </section>
@@ -91,9 +90,9 @@
         <p>Укажите предполагаемые даты поездки,<br>и мы покажем вас лучшие предложения гостиниц в Седоне</p>
       </section>
       <section class="search-hotels">
-         <h2 class="visually-hidden">Фильтр поиска гостиниц</h2>
+        <h2 class="visually-hidden">Фильтр поиска гостиниц</h2>
         <form class="form-search-hotel" action="https://echo.htmlacademy.ru/" method="post">
-          <button class="search-button" type="button">Поиск гостиницы в Седоне</button>
+          <a class="search-button" type="button" href="form.html">Поиск гостиницы в Седоне</a>
           <div class="wrapper-form">
             <p class="wrapper-form-data">
               <label class="label-data-departure" for="data-year-arrival">Дата заезда:</label>
@@ -131,7 +130,7 @@
                 <button class="button-plus" type="button" name="plus-adults">+</button>
               </p>
               <p class="wrapper-form-age">
-                <label class="label-chuldern" for="number-children">Дети:</label>
+                <label class="label-childern" for="number-children">Дети:</label>
                 <button class="button-minus" type="button">-</button>
                 <input type="number" id="number-children" name="children" min="0" placeholder="0">
                 <button class="button-plus" type="button">+</button>
@@ -146,12 +145,15 @@
     <footer class="footer">
       <div class="footer-contacts">
         <p>#visitSEDONA</p>
-        <a href="tel:+7(495)6660166">ТЕЛ: +7(495) 666-01-66</a>
+        <a href="tel:+74956660166">ТЕЛ: +7(495) 666-01-66</a>
       </div>
       <ul class="social-list">
-        <li class="social-item"><a class="social-link link-twitter" href="#"></a></li>
-        <li class="social-item"><a class="social-link link-fb" href="#"></a></li>
-        <li class="social-item"><a class="social-link link-youtube" href="#"></a></li>
+        <li class="social-item"><a class="social-link link-twitter" href="#"><span
+              class="visually-hidden">twitter</span></a></li>
+        <li class="social-item"><a class="social-link link-fb" href="#"><span
+              class="visually-hidden">facebook</span></a></li>
+        <li class="social-item"><a class="social-link link-youtube" href="#"><span
+              class="visually-hidden">youtube</span></a></li>
       </ul>
       <div class="footer-copyright">
         <p>Website by</p>
