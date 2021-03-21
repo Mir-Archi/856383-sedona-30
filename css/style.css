@@ -494,6 +494,7 @@ input::-webkit-inner-spin-button {
   line-height: 26px;
   text-align: center;
   text-decoration: none;
+  display: block;
 }
 
 .search-button:hover {
@@ -529,13 +530,15 @@ input::-webkit-inner-spin-button {
   color: var(--brown-02);
   padding: 6px 10px;
 }
-.button-plus{
+
+.button-plus {
   width: 36px;
   height: 37px;
   background-color: var(--white-01);
   color: var(--brown-02);
   padding: 6px 10px;
 }
+
 .button-minus:hover {
   color: var(--black);
 }
@@ -661,11 +664,11 @@ input::-webkit-inner-spin-button {
 }
 
 .footer-copyright p {
-  margin: 13px 8px 0 0;
+  margin: 23px 8px 0 0;
 }
 
 .footer-copyright a {
-  margin: 5px 8px 0 0;
+  margin: 15px 8px 0 0;
   width: 115px;
   height: 41px;
 }
