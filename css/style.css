@@ -593,7 +593,6 @@ input::-webkit-inner-spin-button {
 
 .social-list {
   justify-self: center;
-  align-self: center;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 6px;
@@ -603,7 +602,7 @@ input::-webkit-inner-spin-button {
 }
 
 .social-item {
-  margin-top: 10px;
+  margin-top: 14px;
 }
 
 .social-link {
@@ -664,7 +663,7 @@ input::-webkit-inner-spin-button {
 }
 
 .footer-copyright p {
-  margin: 23px 8px 0 0;
+  margin: 24px 8px 0 0;
 }
 
 .footer-copyright a {
